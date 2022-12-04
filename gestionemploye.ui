@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GestionEmploye</class>
+ <widget class="QMainWindow" name="GestionEmploye">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GestionEmploye</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="pageee">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>811</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>18</red>
+          <green>60</green>
+          <blue>105</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>237</red>
+          <green>199</green>
+          <blue>183</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>238</red>
+          <green>226</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>18</red>
+          <green>60</green>
+          <blue>105</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>237</red>
+          <green>199</green>
+          <blue>183</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>238</red>
+          <green>226</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>237</red>
+          <green>199</green>
+          <blue>183</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>238</red>
+          <green>226</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>238</red>
+          <green>226</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>liste employés</string>
+     </attribute>
+     <widget class="QPushButton" name="B_supprimer">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>260</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_supprimer">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>260</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>20</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableView" name="table_employe">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>621</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_pdf">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>250</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>pdf</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_trier">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>250</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>trier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>recherhcher</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>stats</string>
+     </attribute>
+     <widget class="QFrame" name="horizontalFrame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>731</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>traitement employés</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEdit_cin">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>cin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>prenom</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nom</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_prenom">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nom">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>salaire</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="POSTE">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>poste</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_salaire">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="B_ajouter">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>240</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="B_modifier">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>240</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_poste">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>droit conge</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_droit_conge">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>30</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nbr_heures">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>220</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nb_heures_</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nb_heures_suppl</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nbr_heures_supp">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>260</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>traitement congés</string>
+     </attribute>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_refuser_conge">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>161</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>refuser conge</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_accepter_conge">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>230</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>accepter conge </string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="table_conge">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>601</width>
+        <height>191</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>demande congés</string>
+     </attribute>
+     <widget class="QPushButton" name="B_ajouter_conge">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>250</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>demande de conge</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit_debut">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>110</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit_fin">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>160</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_cin_conge">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>60</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>60</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CIN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>120</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>debut</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>170</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>120</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>les jours de congés restants :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblConge">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>120</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>consulter congés</string>
+     </attribute>
+     <widget class="QTableView" name="tab_consulter_cong">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>40</y>
+        <width>321</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>reduction</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_demanddereduction">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>321</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>demande de reduction pour un evenement</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonHomeGestEmp">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>home</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menugestion_des_employes">
+    <property name="title">
+     <string>gestion des employes</string>
+    </property>
+   </widget>
+   <addaction name="menugestion_des_employes"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
